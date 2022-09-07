@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn " (click)="goTo('análisis-grafico')"><i-bs name="file-bar-graph-fill"
+          width="25"
+            height="25">
+      </i-bs></button>
+        <button type="button" class="btn " (click)="goTo('información-elemento')">          <i-bs name="info-square"
+          width="25"
+            height="25">
+      </i-bs>
+      </button>
+    </div>
+  </div>
+
+
+  <app-information *ngIf="is"></app-information>
+  <app-analysis  *ngIf="!is"></app-analysis>
+</div>

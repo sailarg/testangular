@@ -1,0 +1,12 @@
+.scroll {
+    overflow-y: scroll;
+    max-height: 800px;
+    height: 67vh;
+
+}
+.form-input label{
+    min-width: 130px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}

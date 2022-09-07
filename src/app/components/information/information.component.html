@@ -1,0 +1,11 @@
+<ng-template [ngIf]="luminariaData!=[]">
+    <div class="row mt-3 scroll">
+
+        <div class="d-inline-flex align-items-center form-input mb-1" *ngFor="let data of luminariaData">
+            <label for="{{data.index}}" class="form-label" >{{data.index}}</label>
+            <input type="text" class="form-control" id="{{data.index}}" readonly value="{{data.value}}">
+          </div>
+   
+    </div>
+ 
+</ng-template>

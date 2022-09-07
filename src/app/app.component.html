@@ -1,0 +1,23 @@
+<div class="map-container"
+    leaflet
+    [leafletOptions]="mapOptions"
+    [leafletLayer]="baseLayer"
+    [leafletFitBounds]="mapFitBounds"
+    (leafletMapReady)="onMapReady($event)"
+    >
+
+<div class="global-text">
+    Haga click en una luminaria
+</div>
+</div>
+
+<ng-template #content let-offcanvas>
+    <div class="offcanvas-header">
+          <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+    </div>
+    <div class="offcanvas-body">
+
+        <app-tool-bar></app-tool-bar>
+
+    </div>
+  </ng-template>
